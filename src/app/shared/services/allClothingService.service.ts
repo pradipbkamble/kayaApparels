@@ -24,9 +24,11 @@ export class AllClothingService{
     id:'123',
     file:""
     })
-
+//get data from local storage
    
-    constructor(private http : HttpClient){}
+    constructor(private http : HttpClient){
+
+    }
 
     getDashboardImages():Observable<any>{
         return this.http.get<any>(this.dashboardUrl)

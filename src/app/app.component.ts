@@ -7,7 +7,7 @@ import { AuthserviceService } from './shared/services/authservice.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  
+  para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iusto debitis recusandae eos nobis necessitatibus id dolores distinctio earum accusamus perferendis, quia est repellat officiis, voluptate, a assumenda cupiditate. Dolor."
   title = 'kayaApparels';
 isloginusers!: boolean;
 constructor(private _authservice:AuthserviceService){}

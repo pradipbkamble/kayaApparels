@@ -28,6 +28,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { UserProfileComponent } from './shared/components/user-profile/user-profile.component';
 import { ProductComponent } from './shared/components/product/product.component';
 import { ProductinfoComponent } from './shared/components/productinfo/productinfo.component';
+import { scrollbarDirective } from './shared/directives/scrollbar.directive';
+import { SummaryPipe } from './shared/pipe/summary.pipe';
 
 
 @NgModule({
@@ -42,7 +44,9 @@ import { ProductinfoComponent } from './shared/components/productinfo/productinf
     UserComponent,
     UserProfileComponent,
     ProductComponent,
-    ProductinfoComponent
+    ProductinfoComponent,
+    scrollbarDirective,
+    SummaryPipe
   ],
   imports: [
     BrowserModule,

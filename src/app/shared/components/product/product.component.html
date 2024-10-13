@@ -9,13 +9,13 @@
             <img mat-card-image [src]="p.image" class="productimg" alt="p.image">
             <mat-card-content style="height: 60px; overflow: hidden;">
                 
-                    {{p.description ||p.title}}
+                    {{p.description ||p.title |uppercase}}
                 
-                <p>{{p.createdAt}}</p>
+                <p>{{p.createdAt | date}}</p>
 
             </mat-card-content>
             <mat-card-footer>
-<p class="my-2"><button mat-raised-button color="primary" type="button" [routerLink]="[p._id]" (click)="travel()">view more..</button></p>
+<p class="my-2"><button mat-raised-button color="primary" type="button" [routerLink]="[p._id]" (click)="travel()">VIEW MORE..</button></p>
             </mat-card-footer>
 
         </mat-card>
